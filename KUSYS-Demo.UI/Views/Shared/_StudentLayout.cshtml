@@ -1,0 +1,42 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KUSYS-Demo Öğrenci Paneli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:13%">
+        <h3 class="w3-bar-item">Menüler</h3>
+        <a href="/yonetici/MesajListesi" class="w3-bar-item w3-button">Öğrenci Listesi</a>
+        <a href="/yonetici/MesajListesi" class="w3-bar-item w3-button">Kurslarım</a>
+        <a href="/yonetici/TalepListesi" class="w3-bar-item w3-button">Kursa Kayıt Ol</a>
+        <a href="/Login/CikisYap" class="w3-bar-item w3-button">Çıkış Yap</a>
+
+
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:13%">
+
+        <div class="w3-container w3-teal">
+            <h1>KUSYS-Demo Öğrenci Paneli</h1>
+        </div>
+
+
+        <div class="w3-container">
+            @RenderBody()
+        </div>
+
+    </div>
+
+</body>
+</html>
+

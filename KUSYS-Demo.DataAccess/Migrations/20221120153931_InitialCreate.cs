@@ -79,6 +79,7 @@ namespace KUSYS_Demo.DataAccess.Migrations
                 },
                 constraints: table =>
                 {
+                    table.PrimaryKey("PK_StudentCourses", x => x.StudentId);
                     table.ForeignKey(
                         name: "FK_StudentCourses_Courses_CourseId",
                         column: x => x.CourseId,

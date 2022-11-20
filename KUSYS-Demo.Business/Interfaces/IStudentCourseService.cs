@@ -1,5 +1,6 @@
 ﻿using KUSYS_Demo.Dtos.CourseDtos;
 using KUSYS_Demo.Dtos.StudentCourseDtos;
+using KUSYS_Demo.Dtos.StudentDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,6 @@ namespace KUSYS_Demo.Business.Interfaces
     {
         Task<List<StudentCourseDtos>> GetDataAll();
         Task<StudentCourseDtos> GetByStudentCourse(object id);
+        Task Create(StudentCourseDtos dto);
     }
 }

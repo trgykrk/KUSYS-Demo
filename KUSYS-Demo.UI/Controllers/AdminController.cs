@@ -28,7 +28,5 @@ namespace KUSYS_Demo.UI.Controllers
             var studentList = await _studentService.GetDataAll();
             return View(studentList);
         }
-
-
     }
 }

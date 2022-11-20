@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KUSYS_Demo.DataAccess.Migrations
 {
     [DbContext(typeof(KUSYSDemoContext))]
-    [Migration("20221113222534_InitialCreate")]
+    [Migration("20221120153931_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -19,6 +19,17 @@ namespace KUSYS_Demo.Business.Services
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
+
+        public async Task Create(StudentCourseDtos dto)
+        {
+            await _unitOfWork.GetRepository<StudentCourse>().Create(new StudentCourse
+            {
+                CourseId = dto.CourseName,
+                StudentId = Convert.ToInt32(dto.StudentName)
+            });
+            await _unitOfWork.SaveChanges();
+        }
+
         public async Task<StudentCourseDtos> GetById(object id)
         {
             var studentCourse = await _unitOfWork.GetRepository<StudentCourse>().GetById(id);
